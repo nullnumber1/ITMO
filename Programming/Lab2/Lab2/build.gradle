@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile files('/Users/nullnumber1/Downloads/Pokemon.jar')
+}
+task fatJar(type:Jar) {
+    manifest {
+        attributes 'Main-Class' : 'sandBox',
+        'Implementation-Title' : 'Lab2jar',
+        'Implementation-Version' : '1.0'
+    }
+    from {
+        configurations.compile.collect{(it.isDirectory() ? it : zipTree(it))}
+    }
+    with jar
+}
