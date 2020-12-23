@@ -1,4 +1,4 @@
-public class CuttersGroup extends PeopleGroup implements ICutter {
+public class CuttersGroup extends Shortie implements Cutter {
     public CuttersGroup(String name) {
         super(name);
     }

@@ -1,10 +1,11 @@
-public class Person extends Human{
-    public Person(){
+public class Shortie extends Person{
+    public Shortie(){
 
     }
-    public Person(String name) {
+    public Shortie(String name) {
         super(name);
     }
+
 
     @Override
     public String toString() {
@@ -14,10 +15,5 @@ public class Person extends Human{
     @Override
     public int hashCode() {
         return super.hashCode();
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        return super.equals(o);
     }
 }

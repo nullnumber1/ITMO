@@ -1,8 +1,9 @@
 public class Vehicle {
     private String name;
-
-    public Vehicle(String name) {
+    private Driver driver;
+    public Vehicle(String name, Driver driver) {
         this.name = name;
+        this.driver = driver;
     }
 
     public String drive(Location location){
@@ -12,6 +13,6 @@ public class Vehicle {
 
     @Override
     public String toString() {
-        return this.name;
+        return (this.name + " " + this.driver.toString());
     }
 }

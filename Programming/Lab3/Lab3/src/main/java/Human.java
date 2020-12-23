@@ -8,6 +8,9 @@ public abstract class Human {
         this.name = name;
     }
 
+    protected Human() {
+    }
+
     @Override
     public String toString() {
         return this.name;
