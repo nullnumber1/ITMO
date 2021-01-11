@@ -1,0 +1,17 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdftex 2020.12.20)  28 DEC 2020 10:26
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**test.tex
+(./test.tex
+./test.tex:1: Undefined control sequence.
+l.1 \newpage
+            
+? 
+./test.tex:1: Emergency stop.
+l.1 \newpage
+            
+End of file on the terminal!
+
+./test.tex:1:  ==> Fatal error occurred, no output PDF file produced!
