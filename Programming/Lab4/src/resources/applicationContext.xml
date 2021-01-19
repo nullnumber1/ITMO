@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="Dunno"
+          class="com.nullnumber1.lab4.Dunno">
+        <constructor-arg value="Незнайка"/>
+    </bean>
+    <bean id="Goat"
+          class="com.nullnumber1.lab4.Shortie.Goat">
+    </bean>
+    <bean id="CuttersGroup"
+          class="com.nullnumber1.lab4.CuttersGroup">
+        <constructor-arg value="Коротышки"/>
+    </bean>
+    <bean id="Driver"
+          class="com.nullnumber1.lab4.Driver">
+        <constructor-arg value="Шофёр"/>
+    </bean>
+    <bean id="Vehicle"
+          class="com.nullnumber1.lab4.Vehicle">
+        <constructor-arg value="Грузовик"/>
+        <constructor-arg ref="Driver"/>
+    </bean>
+</beans>
