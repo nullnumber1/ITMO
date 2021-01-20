@@ -13,7 +13,7 @@ public class Lab4Application {
                 "applicationContext.xml"
         );
         Dunno dunno = context.getBean("Dunno", Dunno.class);
-        Shortie shortie = new Shortie();
+        Shortie shortie = context.getBean("Shortie", Shortie.class);
         Shortie.Goat goat = shortie.new Goat() {
             @Override
             public String toSay(String phrase) {
