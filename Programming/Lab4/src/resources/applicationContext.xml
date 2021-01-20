@@ -6,8 +6,8 @@
           class="com.nullnumber1.lab4.Dunno">
         <constructor-arg value="Незнайка"/>
     </bean>
-    <bean id="Goat"
-          class="com.nullnumber1.lab4.Shortie.Goat">
+    <bean id="Shortie"
+          class="com.nullnumber1.lab4.Shortie">
     </bean>
     <bean id="CuttersGroup"
           class="com.nullnumber1.lab4.CuttersGroup">

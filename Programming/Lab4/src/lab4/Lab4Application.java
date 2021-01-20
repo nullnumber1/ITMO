@@ -13,8 +13,8 @@ public class Lab4Application {
                 "applicationContext.xml"
         );
         Dunno dunno = context.getBean("Dunno", Dunno.class);
-        Shortie.Goat goat = context.getBean("Goat", Shortie.Goat.class);
-        goat = new Shortie.Goat(){
+        Shortie shortie = new Shortie();
+        Shortie.Goat goat = shortie.new Goat() {
             @Override
             public String toSay(String phrase) {
                 return Narrator.returnable("mmmm...");
@@ -39,20 +39,13 @@ public class Lab4Application {
             System.err.println(e.getMessage());
         }
         goat.seatGrab();
-        try{
-            dunno.drag(goat, Location.SOMEWHERE);
-        }catch(MoveException e){
-            System.err.println(e.getMessage());
-        }
+        dunno.drag(goat, Location.SOMEWHERE);
         context.close();
     }
     static class Narrator{
         Human mainPerson;
         public Narrator(Human mainPerson){
             this.mainPerson = mainPerson;
-        }
-        static void print (String event){
-            System.out.print(event);
         }
         static void printLn (String event){
             System.out.println(event);

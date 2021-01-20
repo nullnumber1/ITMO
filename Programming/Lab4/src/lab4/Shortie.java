@@ -31,7 +31,7 @@ public class Shortie extends Person {
         return super.hashCode();
     }
 
-    static class Goat extends Shortie {
+    class Goat extends Shortie {
         public Goat() {
             super("Козлик");
         }
